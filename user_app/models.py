@@ -8,6 +8,6 @@ def upload_to(inst, filename):
 class User(AbstractUser):
     # email = models.EmailField(max_length = 55, unique=True)
     username = models.CharField(max_length = 55, unique=False) 
-    nicname = models.CharField(max_length = 55, default='default_nicname')
+    nickname = models.CharField(max_length = 55, default='default_nicname')
     profile_picture = ResizedImageField(upload_to = "", null = True, blank = True)
 
